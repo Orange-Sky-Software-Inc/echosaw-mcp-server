@@ -1,0 +1,46 @@
+{
+  "name": "@echosaw/mcp-server",
+  "version": "1.2.3",
+  "type": "module",
+  "mcpName": "com.echosaw/mcp-server",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "media-analysis",
+    "video-analysis",
+    "audio-analysis",
+    "image-analysis",
+    "media-intelligence",
+    "ai-agents",
+    "claude",
+    "cursor",
+    "multimodal",
+    "echosaw"
+  ],
+  "description": "Echosaw MCP Server - Media intelligence for AI assistants. Connect your LLM to Echosaw and analyze media directly within your workflow.",                   
+  "main": "dist/src/index.js",
+  "bin": {
+    "echosaw-mcp": "dist/bin/echosaw-mcp.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bin/echosaw-mcp.js",
+    "test": "vitest run",
+    "test:smoke": "vitest run --reporter=verbose"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
